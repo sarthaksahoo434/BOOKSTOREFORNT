@@ -15,10 +15,10 @@ export class ToolBarComponent implements OnInit, AfterViewInit {
   userName : any;
   loginStatus!: boolean;
   @Output() toolToDash = new EventEmitter<any>();
-  @Input() cartCount: number = 0;  //data sharing cart count will be updating according to add to bag click
+  @Input() cartCount: number = 0;  
   constructor(private bookService: BooksServiceService, private userService: UserServiceService,
      private router: Router) {
-      this.onGetCart(); // initial badge count
+      this.onGetCart(); 
   }
   ngAfterViewInit(): void {
     setTimeout(() => {
