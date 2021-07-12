@@ -16,7 +16,6 @@
         </div>
         <div fxLayout="row" fxLayoutAlign="center center">
             <div mat-car-avatar class="profile-pic">
-                <!-- <img mat-card-image src="https://res.cloudinary.com/bhu087/image/upload/v1621412984/ocgt4xpa6zqcgeivfr0j.jpg" /> -->
                 <button mat-button [matMenuTriggerFor]="menu">
                     <div class="cart-icon" fxLayout="column" fxLayoutAlign="center center">
                         <mat-icon>perm_identity</mat-icon>
@@ -33,9 +32,6 @@
             </div>
             </div>
             <div>
-                <!-- <div>
-                    <button mat-flat-button routerLink="signup" (click)="changeColorTwo()" class="signup-button" routerLinkActive="active">SIGNUP</button>
-                </div> -->
                 <button mat-button (click)="onCart()">
                     <div class="cart-icon" fxLayout="column" fxLayoutAlign="center center">
                         <mat-icon [matBadge]="cartCount">shopping_cart</mat-icon>
