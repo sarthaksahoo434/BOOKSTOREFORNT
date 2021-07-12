@@ -29,7 +29,7 @@ export class DisplayBooksComponent implements OnInit, AfterViewInit {
   menu!: MatMenuTrigger;
   @Input()
   searchTerm!: string;  
-  p:any; // pagination
+  p:any; 
 
   public pageSlice = this.data.slice(0,12);
   constructor(private booksService: BooksServiceService, private router: Router, public dialog: MatDialog) { 
@@ -85,7 +85,6 @@ export class DisplayBooksComponent implements OnInit, AfterViewInit {
       this.col = 4;
     }
   }
-  // for selecting columns 
   onResize(event:any) {
     if(window.innerWidth <= 820){
       this.col = 1;
