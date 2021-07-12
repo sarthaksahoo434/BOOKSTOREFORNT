@@ -30,10 +30,10 @@ export class DashboardComponent implements OnInit {
     this.displayBooks.searchStringCall();
   }
   ngOnInit(): void {
-    this.onGetCart();  //this is for initial badge count
+    this.onGetCart();  
   }
   callChild(message:Event){
-    this.cartCount++;       //Click on add to cart increase cart value
+    this.cartCount++;       
   }
   onGetCart(){
     if(localStorage.getItem("Bearer")){
