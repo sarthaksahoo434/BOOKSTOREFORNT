@@ -27,9 +27,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import {MatBadgeModule} from '@angular/material/badge';
 import { DisplayCartComponent } from './components/display-cart/display-cart.component';
 import {MatRadioModule} from '@angular/material/radio';
-//import { OrderSuccessfulComponent } from './pages/order-successful/order-successful.component';
 import {MatTableModule} from '@angular/material/table';
-//import { WishListComponent } from './pages/wish-list/wish-list.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { AuthGuardGuard } from './services/authGuard/auth-guard.guard';
@@ -49,8 +47,6 @@ import { DialogComponentComponent } from './components/dialog-component/dialog-c
     ToolBarComponent,
     FooterComponent,
     DisplayCartComponent,
-    // OrderSuccessfulComponent,
-    // WishListComponent,
     SearchServiceService,
     DialogComponentComponent
   ],
