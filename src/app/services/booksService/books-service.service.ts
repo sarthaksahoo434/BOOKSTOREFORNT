@@ -59,7 +59,7 @@ export class BooksServiceService {
     return res;
   }
   deleteBookFromWishlist(data:any): Observable<any>{
-    var res = this.httpservice.delete(`${this.url}Books/deleteFromWishlist/${data}`, true, this.header);
+    var res = this.httpservice.delete(`${this.url}Books/FromWishlist/${data}`, true, this.header);
     console.log(res);
     return res;
   }
