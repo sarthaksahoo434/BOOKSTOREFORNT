@@ -61,6 +61,7 @@ export class DisplayCartComponent implements OnInit, AfterViewInit {
     cart.quantity += 1;
     this.data[index] = cart;
     this.decreaseButton = true;
+    //adding cart value by one
     this.toolBar.increaseCart(1);
     this.bookService.addToCart(cart.bookID).subscribe((serve)=>{
       console.log(serve);
@@ -84,6 +85,7 @@ export class DisplayCartComponent implements OnInit, AfterViewInit {
       cart.quantity -= 1;
       this.data[index] = cart;
       this.increaseButton = true;
+      //decreasing cart value by one
       this.toolBar.decreaseCart(1);
       this.bookService.decreaseCartCount(cart.bookID).subscribe((serve)=>{
       },
@@ -110,6 +112,12 @@ export class DisplayCartComponent implements OnInit, AfterViewInit {
       console.log(error);
     });
   }
+  placeOrder(){
+    this.placeOrderButton = false;
+    this.customerDetails = true;
+    console.log(this.data);
+  }
+
   addressForm = this.formBuilder.group({
     city : ['', [Validators.required, Validators.minLength(3)]],
     name : ['', [Validators.required, Validators.minLength(3)]],
@@ -141,9 +149,4 @@ export class DisplayCartComponent implements OnInit, AfterViewInit {
       console.log(error);
     });
   }
-
 }
-
-
-
-
